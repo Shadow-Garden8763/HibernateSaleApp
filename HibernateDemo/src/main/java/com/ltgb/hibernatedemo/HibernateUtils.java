@@ -41,7 +41,7 @@ public class HibernateUtils {
         pros.setProperty(Environment.JAKARTA_JDBC_URL, "jdbc:mysql://localhost/saledb");
         pros.setProperty(Environment.JAKARTA_JDBC_DRIVER, "com.mysql.cj.jdbc.Driver");
         pros.setProperty(Environment.JAKARTA_JDBC_USER, "root");
-        pros.setProperty(Environment.JAKARTA_JDBC_PASSWORD, "root");
+        pros.setProperty(Environment.JAKARTA_JDBC_PASSWORD, "giabao080810");
         pros.setProperty(Environment.SHOW_SQL, "true");
         
         conf.setProperties(pros);
