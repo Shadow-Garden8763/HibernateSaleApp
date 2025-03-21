@@ -7,6 +7,8 @@ package com.ltgb.service.impl;
 import com.ltgb.pojo.Category;
 import com.ltgb.repository.CategoryRepository;
 import com.ltgb.service.CategoryService;
+import jakarta.transaction.Transactional;
+
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -16,7 +18,6 @@ import org.springframework.stereotype.Service;
  * @author admin
  */
 @Service
-
 public class CategoryServiceImpl implements CategoryService{
     @Autowired
    

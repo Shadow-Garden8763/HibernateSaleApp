@@ -6,6 +6,7 @@ package com.ltgb.repository.impl;
 
 import com.ltgb.pojo.Category;
 import com.ltgb.repository.CategoryRepository;
+import jakarta.ejb.TransactionManagement;
 import jakarta.persistence.Query;
 import java.util.List;
 import org.hibernate.Session;
@@ -14,12 +15,14 @@ import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
+
 /**
  *
  * @author admin
  */
 @Repository
 @Transactional
+@TransactionManagement
 public class CategoryRepositoryImpl implements CategoryRepository {
 
     @Autowired

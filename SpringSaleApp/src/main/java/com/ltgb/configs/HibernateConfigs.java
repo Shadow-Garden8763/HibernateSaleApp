@@ -27,7 +27,6 @@ public class HibernateConfigs {
 
     @Autowired
     private Environment env;
-
     @Bean
     public LocalSessionFactoryBean getSessionFactory() {
         LocalSessionFactoryBean sessionFactory
@@ -53,7 +52,6 @@ public class HibernateConfigs {
                 env.getProperty("hibernate.connection.password"));
         return dataSource;
     }
-
     private Properties hibernateProperties() {
         Properties props = new Properties();
         props.put(DIALECT, env.getProperty("hibernate.dialect"));
